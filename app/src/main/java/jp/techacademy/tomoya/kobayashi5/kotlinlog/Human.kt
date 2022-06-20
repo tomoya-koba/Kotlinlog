@@ -2,8 +2,11 @@ package jp.techacademy.tomoya.kobayashi5.kotlinlog
 
 import android.util.Log
 
-open class Human: Animal, Thinkable {
-    constructor(name: String, age: Int, hobby:String): super(name, age, hobby){
+class Human: Animal, Thinkable {
+
+    var hobby = "どうせ初期化するので何か適当に入れておく"
+    constructor(name: String,age: Int,hobby: String): super(name,age){
+        this.hobby = hobby
     }
 
     override fun say() {
